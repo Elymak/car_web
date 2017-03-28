@@ -10,8 +10,8 @@
   </servlet>
   
   <servlet>
-  	<servlet-name>enregistrerLivre</servlet-name>
-  	<servlet-class>car.tp4.servlet.EnregistrerLivreServlet</servlet-class>
+  	<servlet-name>createBook</servlet-name>
+  	<servlet-class>car.tp4.servlet.CreateBookServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -20,8 +20,8 @@
   </servlet-mapping>
   
   <servlet-mapping>
-  	<servlet-name>enregistrerLivre</servlet-name>
-  	<url-pattern>/enregistrerLivre</url-pattern>
+  	<servlet-name>createBook</servlet-name>
+  	<url-pattern>/createBook</url-pattern>
   </servlet-mapping>
 
 </web-app>

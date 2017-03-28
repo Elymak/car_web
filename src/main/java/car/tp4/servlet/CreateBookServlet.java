@@ -8,13 +8,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class EnregistrerLivreServlet extends HttpServlet {
+public class CreateBookServlet extends HttpServlet {
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException
 	{
-		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jsp/enregistrerLivre.jsp");
+		RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jsp/createBook.jsp");
 	    dispatcher.forward(request, response);
 	}
 	
@@ -24,7 +24,7 @@ public class EnregistrerLivreServlet extends HttpServlet {
 	{
 		request.setCharacterEncoding("UTF-8");
 
-	    RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jsp/enregistrerLivre.jsp");
+	    RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/jsp/editBook.jsp");
 	    request.setAttribute("titre", request.getParameter("titre"));
 	    request.setAttribute("auteur", request.getParameter("auteur"));
 	    request.setAttribute("annee", request.getParameter("annee"));

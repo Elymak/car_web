@@ -4,34 +4,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Bibliothèque en ligne : Enregistrement</title>
+<title>Bibliothèque en ligne : Créer</title>
 </head>
 <body>
-	<% String titre = request.getParameter("titre");
-		String auteur = request.getParameter("auteur");
-		String annee = request.getParameter("annee");
-	
-	%>
 
-    <% if (titre == null || auteur == null || annee == null) { %>
+	<h1>Créer un livre :</h1>
 
-	<h1>Enregistrer un livre</h1>
-
-	<form method="POST" action="enregistrerLivre">
+	<form method="POST" action="createBook">
 		<label>Titre</label><input type="text" name="titre"> <br />
 		<label>Auteur</label><input type="text" name="auteur"> <br />
 		<label>Année de	parution</label><input type="text" name="annee"><br />
 		<input type="submit" value="Send" />
 	</form>
-	
-	<% } else { %>
-	
-	<h1>Résumé :</h1>
-	
-	<p>Titre = <%= titre %></p>
-	<p>Auteur = <%= auteur %></p>
-	<p>Année = <%= annee %></p>
-	
-	<% }%>
 </body>
 </html>
