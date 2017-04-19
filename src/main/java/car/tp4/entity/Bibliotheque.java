@@ -1,11 +1,8 @@
 package car.tp4.entity;
 
-import java.awt.RenderingHints.Key;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
+import java.util.HashSet;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Set;
 
 import javax.ejb.Stateful;
@@ -18,7 +15,6 @@ public class Bibliotheque implements BibliothequeItf {
 	public Bibliotheque() {
 		books = new HashMap<Book, Integer>();
 	}
-		
 	
 	@Override
 	public void init() {
@@ -65,7 +61,11 @@ public class Bibliotheque implements BibliothequeItf {
 	}
 
 	@Override
-	public List<String> listAuteur() {
-		return null;
+	public Set<String> listAuteur() {
+		Set<Book> set = listBooks();
+		Set<String> result = new HashSet<String>();
+		for(Book b : set)
+			result.add(b.getAuthor());
+		return result;
 	}
 }

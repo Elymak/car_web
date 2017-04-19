@@ -1,6 +1,5 @@
 package car.tp4.entity;
 
-import java.util.List;
 import java.util.Set;
 
 import javax.ejb.Local;
@@ -12,5 +11,5 @@ public interface BibliothequeItf {
 	public boolean createBook(String titre, String auteur, int annee);
 	public boolean editBook(Book b, String titre, String auteur, int annee);
 	public Set<Book> listBooks();
-	public List<String> listAuteur();
+	public Set<String> listAuteur();
 }
