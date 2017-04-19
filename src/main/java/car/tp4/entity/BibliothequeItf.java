@@ -2,9 +2,9 @@ package car.tp4.entity;
 
 import java.util.Set;
 
-import javax.ejb.Local;
+import javax.ejb.Remote;
 
-@Local
+@Remote
 public interface BibliothequeItf {
 	public void init();
 	public void addbook(Book b);

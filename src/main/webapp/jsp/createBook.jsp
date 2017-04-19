@@ -14,7 +14,7 @@
 		<label>Titre</label><input type="text" name="titre"> <br />
 		<label>Auteur</label><input type="text" name="auteur"> <br />
 		<label>Année de	parution</label><input type="text" name="annee"><br />
-		<input type="submit" value="Send" />
+		<input type="submit" value="Créer" />
 	</form>
 </body>
 </html>

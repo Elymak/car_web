@@ -4,11 +4,21 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Editer un livre :</title>
+<title>Bibliothèque en ligne : Editer</title>
 </head>
 <body>
 
-<h1>TODO</h1>
+	<h1>Editer un livre :</h1>
 
+	<% String titre = request.getParameter("titre"); %>
+	<% String auteur = request.getParameter("auteur"); %>
+	<% String annee = request.getParameter("annee"); %>
+
+	<form method="POST" action="editBook">
+		<label>Titre</label><input type="text" name="titre" value="<%= titre %>"> <br />
+		<label>Auteur</label><input type="text" name="auteur" value="<%= auteur %>"> <br />
+		<label>Année de	parution</label><input type="text" name="annee" value="<%= annee %>"><br />
+		<input type="submit" value="Edit" />
+	</form>
 </body>
 </html>

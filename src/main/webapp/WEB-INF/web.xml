@@ -13,6 +13,11 @@
   	<servlet-name>createBook</servlet-name>
   	<servlet-class>car.tp4.servlet.CreateBookServlet</servlet-class>
   </servlet>
+  
+  <servlet>
+  	<servlet-name>editBook</servlet-name>
+  	<servlet-class>car.tp4.servlet.EditBookServlet</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>hello</servlet-name>
@@ -22,6 +27,11 @@
   <servlet-mapping>
   	<servlet-name>createBook</servlet-name>
   	<url-pattern>/createBook</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>editBook</servlet-name>
+  	<url-pattern>/editBook</url-pattern>
   </servlet-mapping>
 
 </web-app>
